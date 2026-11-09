@@ -1,5 +1,3 @@
-![BugHunter-Skills banner](assets/banner-v2.svg)
-
 # BugHunter-Skills
 
 > **Universal, model-agnostic bug hunting skill framework** — 83 skills · 15 universal commands · 681 disclosed-report patterns across 24 vulnerability classes · enterprise attack matrices · engagement scaffolding · works on **any agent harness** (Claude Code, OpenCode, Codex CLI, Hermes, shell) with **any LLM** (Nemotron, DeepSeek, Qwen, Llama via OpenRouter, Ollama, 9router, Anthropic).
