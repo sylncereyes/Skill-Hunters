@@ -1,0 +1,8 @@
+{
+  "name": "classify",
+  "description": "Classify URL against hunt-* skills",
+  "arguments": [
+    {"name": "url", "type": "string", "description": "URL to classify", "required": true}
+  ],
+  "command": "bug-hunter classify {{url}}"
+}

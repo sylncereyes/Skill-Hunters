@@ -1,0 +1,6 @@
+{
+  "name": "example-engagement",
+  "in_scope": ["example.com", "api.example.com", "app.example.com"],
+  "out_of_scope": ["cdn.example.com", "static.example.com", "blog.example.com"],
+  "seeds": ["https://example.com", "https://api.example.com"]
+}

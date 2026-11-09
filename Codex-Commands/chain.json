@@ -1,0 +1,9 @@
+{
+  "name": "chain",
+  "description": "Build exploit chains (requires LLM)",
+  "arguments": [
+    {"name": "target", "type": "string", "description": "Target domain", "required": false},
+    {"name": "finding", "type": "string", "description": "Path to finding markdown", "required": false}
+  ],
+  "command": "bug-hunter chain {% if target %}{{target}}{% endif %} {% if finding %}{{finding}}{% endif %}"
+}

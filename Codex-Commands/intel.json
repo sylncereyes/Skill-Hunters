@@ -1,0 +1,8 @@
+{
+  "name": "intel",
+  "description": "OSINT/intel gathering",
+  "arguments": [
+    {"name": "target", "type": "string", "description": "Target domain", "required": true}
+  ],
+  "command": "bug-hunter intel {{target}}"
+}

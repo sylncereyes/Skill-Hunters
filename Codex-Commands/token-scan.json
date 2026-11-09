@@ -1,0 +1,8 @@
+{
+  "name": "token-scan",
+  "description": "Scan for exposed tokens/secrets",
+  "arguments": [
+    {"name": "target", "type": "string", "description": "Target domain or path", "required": false}
+  ],
+  "command": "bug-hunter token-scan {% if target %}{{target}}{% endif %}"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "scope",
+  "description": "Create or validate scope JSON",
+  "arguments": [
+    {"name": "action", "type": "string", "description": "Action (create, validate)", "required": true, "enum": ["create", "validate"]},
+    {"name": "name", "type": "string", "description": "Engagement name (for create)", "required": false},
+    {"name": "in_scope", "type": "string", "description": "Comma-separated in-scope hosts (for create)", "required": false},
+    {"name": "out_scope", "type": "string", "description": "Comma-separated out-of-scope hosts (for create)", "required": false},
+    {"name": "seeds", "type": "string", "description": "Comma-separated seed URLs (for create)", "required": false},
+    {"name": "scope_file", "type": "string", "description": "Scope file to validate (for validate)", "required": false}
+  ],
+  "command": "{% if action == 'create' %}bug-hunter scope --create --name \"{{name}}\" {% if in_scope %}--in-scope \"{{in_scope}}\"{% endif %} {% if out_scope %}--out-scope \"{{out_scope}}\"{% endif %} {% if seeds %}--seeds \"{{seeds}}\"{% endif %}{% else %}bug-hunter scope {{scope_file}}{% endif %}"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "report",
+  "description": "Generate report draft",
+  "arguments": [
+    {"name": "finding", "type": "string", "description": "Path to finding markdown", "required": true},
+    {"name": "platform", "type": "string", "description": "Platform (h1, bugcrowd, intigriti, immunefi)", "required": false, "default": "h1"},
+    {"name": "out", "type": "string", "description": "Output file", "required": false}
+  ],
+  "command": "bug-hunter report {{finding}} --platform {{platform}} {% if out %}--out {{out}}{% endif %}"
+}

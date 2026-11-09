@@ -1,0 +1,8 @@
+{
+  "name": "surface",
+  "description": "Show ranked attack surface from recon manifest",
+  "arguments": [
+    {"name": "target", "type": "string", "description": "Target with recon manifest", "required": true}
+  ],
+  "command": "bug-hunter surface {{target}}"
+}

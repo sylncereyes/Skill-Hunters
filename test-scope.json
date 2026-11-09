@@ -1,0 +1,12 @@
+{
+  "name": "test-engagement",
+  "in_scope": [
+    "example.com",
+    "api.example.com"
+  ],
+  "out_of_scope": [],
+  "seeds": [
+    "https://example.com",
+    "https://api.example.com"
+  ]
+}

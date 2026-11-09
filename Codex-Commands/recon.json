@@ -1,0 +1,9 @@
+{
+  "name": "recon",
+  "description": "Run full recon pipeline on a target",
+  "arguments": [
+    {"name": "target", "type": "string", "description": "Target domain", "required": true},
+    {"name": "nuclei", "type": "boolean", "description": "Run nuclei scan", "required": false, "default": false}
+  ],
+  "command": "bug-hunter recon {{target}} {% if nuclei %}--nuclei{% endif %}"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "remember",
+  "description": "Cross-engagement memory",
+  "arguments": [],
+  "command": "bug-hunter remember"
+}

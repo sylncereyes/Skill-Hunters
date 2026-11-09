@@ -1,0 +1,17 @@
+{
+  "name": "hunt",
+  "description": "Run autonomous hunt pipeline on a target",
+  "arguments": [
+    {"name": "target", "type": "string", "description": "Target domain", "required": true},
+    {"name": "provider", "type": "string", "description": "LLM provider", "required": false, "default": "openrouter"},
+    {"name": "model", "type": "string", "description": "Model name", "required": false, "default": "nvidia/nemotron-3-ultra"},
+    {"name": "base_url", "type": "string", "description": "Custom base URL (e.g. 9router)", "required": false},
+    {"name": "max_hunts", "type": "integer", "description": "Max hunt items", "required": false, "default": 10},
+    {"name": "parallel", "type": "integer", "description": "Concurrent agents", "required": false, "default": 3},
+    {"name": "allow_intrusive", "type": "boolean", "description": "Allow state-changing PoCs", "required": false, "default": false},
+    {"name": "expand", "type": "boolean", "description": "OSINT bridge", "required": false, "default": false},
+    {"name": "use_memory", "type": "boolean", "description": "Cross-engagement memory", "required": false, "default": false},
+    {"name": "mock", "type": "boolean", "description": "Dry-run mode", "required": false, "default": false}
+  ],
+  "command": "bug-hunter hunt {{target}} --provider {{provider}} --model {{model}} {% if base_url %}--base-url {{base_url}}{% endif %} --max-hunts {{max_hunts}} --parallel {{parallel}} {% if allow_intrusive %}--allow-intrusive{% endif %} {% if expand %}--expand{% endif %} {% if use_memory %}--use-memory{% endif %} {% if mock %}--mock{% endif %}"
+}

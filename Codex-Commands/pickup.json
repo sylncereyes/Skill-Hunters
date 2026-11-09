@@ -1,0 +1,6 @@
+{
+  "name": "pickup",
+  "description": "List previous engagements",
+  "arguments": [],
+  "command": "bug-hunter pickup"
+}

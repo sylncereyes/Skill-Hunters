@@ -1,0 +1,8 @@
+{
+  "name": "triage",
+  "description": "Run 7-Question Gate on a finding",
+  "arguments": [
+    {"name": "finding", "type": "string", "description": "Path to finding markdown", "required": true}
+  ],
+  "command": "bug-hunter triage {{finding}}"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "memory-gc",
+  "description": "Garbage collect memory ledger",
+  "arguments": [
+    {"name": "rotate", "type": "boolean", "description": "Rotate ledger", "required": false, "default": false},
+    {"name": "purge", "type": "boolean", "description": "Purge backups", "required": false, "default": false}
+  ],
+  "command": "bug-hunter memory-gc {% if rotate %}--rotate{% endif %} {% if purge %}--purge{% endif %}"
+}
